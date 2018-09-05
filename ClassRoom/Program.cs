@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,8 +19,12 @@ namespace ClassRoom
 
 
 
-            Console.WriteLine(klasse.KlasseNavn);
-            Console.WriteLine(klasse.KlasseListe.Count);
+            Console.WriteLine("Klassenavn: " + klasse.KlasseNavn);
+
+            foreach (var e in klasse.KlasseListe)
+            {
+                Console.WriteLine("Elev: " + e.Navn);
+            }
             Console.ReadKey();
         }
     }
