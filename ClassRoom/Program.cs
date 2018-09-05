@@ -17,14 +17,13 @@ namespace ClassRoom
             klasse.KlasseListe.Add(new Studerende("Jesper", 3, 4));
             klasse.KlasseListe.Add(new Studerende("Hakan", 12, 24));
 
-
-
             Console.WriteLine("Klassenavn: " + klasse.KlasseNavn);
 
             foreach (var e in klasse.KlasseListe)
             {
                 Console.WriteLine("Elev: " + e.Navn);
             }
+
             Console.ReadKey();
         }
     }
