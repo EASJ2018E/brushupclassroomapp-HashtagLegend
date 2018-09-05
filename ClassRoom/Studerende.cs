@@ -20,9 +20,31 @@ namespace ClassRoom
             Fødselsdag = fødselsdag;
         }
 
-        //public override string ToString()
-        //{
-        //    return $"{nameof(Navn)}: {Navn}, {nameof(Fødselsmåned)}: {Fødselsmåned}, {nameof(Fødselsdag)}: {Fødselsdag}";
-        //}
+        public string Årstid()
+        {
+            if (Fødselsmåned == 12 || Fødselsmåned == 1 || Fødselsmåned == 2)
+            {
+                return "Vinter";
+            }
+
+            else if (Fødselsmåned == 3 || Fødselsmåned == 4 || Fødselsmåned == 5)
+            {
+                return "Forår";
+            }
+
+            else if (Fødselsmåned == 6 || Fødselsmåned == 7 || Fødselsmåned == 8)
+            {
+                return "Sommer";
+            }
+
+            else if (Fødselsmåned == 9 || Fødselsmåned == 10 || Fødselsmåned == 11)
+            {
+                return "Efterår";
+            }
+
+            return null;
+        }
+
+
     }
 }

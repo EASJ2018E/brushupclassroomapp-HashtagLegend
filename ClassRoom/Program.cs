@@ -22,6 +22,7 @@ namespace ClassRoom
             foreach (var e in klasse.KlasseListe)
             {
                 Console.WriteLine("Elev: " + e.Navn);
+                Console.WriteLine("Fødsels årstid: " + e.Årstid());
             }
 
             Console.ReadKey();
