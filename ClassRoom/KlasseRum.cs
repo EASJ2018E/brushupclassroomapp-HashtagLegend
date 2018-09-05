@@ -12,10 +12,16 @@ namespace ClassRoom
         public List<Studerende> KlasseListe { get; set; }
         public DateTime SemesterStart { get; set; }
 
+
         public KlasseRum()
         {
-            
+            KlasseNavn = "3B";
+            SemesterStart = new DateTime(2018, 9, 4);
+            KlasseListe = new List<Studerende>();
+
+
         }
+        
 
     }
 }
