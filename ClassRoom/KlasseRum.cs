@@ -19,9 +19,16 @@ namespace ClassRoom
             SemesterStart = new DateTime(2018, 9, 4);
             KlasseListe = new List<Studerende>();
 
-
         }
-        
+
+        //public void ÅrstidsTæller()
+        //{
+        //    var listOfStuderende = from studerende in KlasseListe
+        //        where studerende.Årstid().Equals("Vinter")
+        //        select studerende;
+        //    Console.WriteLine(listOfStuderende);
+
+        //}
 
     }
 }
