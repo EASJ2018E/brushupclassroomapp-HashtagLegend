@@ -16,7 +16,7 @@ namespace ClassRoom
             KlasseRum klasse = new KlasseRum();
             klasse.KlasseListe.Add(new Studerende("Patrick", 10, 4));
             klasse.KlasseListe.Add(new Studerende("Jesper", 3, 4));
-            klasse.KlasseListe.Add(new Studerende("Hakan", 12, 24));
+            klasse.KlasseListe.Add(new Studerende("Hakan", 14, 24));
             klasse.KlasseListe.Add(new Studerende("Peter", 11, 26));
             klasse.KlasseListe.Add(new Studerende("Morter", 3, 17));
             klasse.KlasseListe.Add(new Studerende("Bastian", 9, 22));

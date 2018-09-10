@@ -15,6 +15,7 @@ namespace ClassRoom
         public int Fødselsmåned { get; private set; }
         public int Fødselsdag { get; private set; }
 
+        
         public string FødselsÅrstid { get; set; }
         public static int VinterCounter = 0;
         public static int ForårsCounter = 0;
@@ -27,6 +28,19 @@ namespace ClassRoom
             Navn = navn;
             Fødselsmåned = fødselsmåned;
             Fødselsdag = fødselsdag;
+          
+            if (fødselsmåned != 1)
+            {
+                try
+                {
+
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+            }
 
         }
 
